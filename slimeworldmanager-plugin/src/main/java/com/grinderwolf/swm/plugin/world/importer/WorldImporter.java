@@ -112,7 +112,7 @@ public class WorldImporter {
         propertyMap.setValue(SlimeProperties.SPAWN_X, data.getSpawnX());
         propertyMap.setValue(SlimeProperties.SPAWN_Y, data.getSpawnY());
         propertyMap.setValue(SlimeProperties.SPAWN_Z, data.getSpawnZ());
-        System.out.println(worldVersion);
+
         if (worldVersion != SWMPlugin.getInstance().getNms().getWorldVersion()) {
             throw new UnsupportedOperationException("Please ensure that this world is not outdated.");
         }
